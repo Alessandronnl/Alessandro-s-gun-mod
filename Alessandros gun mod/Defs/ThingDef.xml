@@ -1,76 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- weapon -->
+<!-- Type 99 rifle Arisaka -->
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+    <defName>CE_Gun_rifle Arisaka</defName>
+    <label>Type 99 rifle Arisaka</label>
+    <description></description>
+    <graphicData>
+      <texPath>Things/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.02</ShotSpread>
+      <SwayFactor>1.40</SwayFactor>
+      <Bulk>9.50</Bulk>
+      <Mass>3.90</Mass>
+      <RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Wood>60</Wood>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AmmoSet_77x58mmArisaka</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>70</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_77x58mmArisaka</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>Bayonet</label>
+          <capacities>
+            <li>Stab</li>
+          </capacities>
+          <power>14</power>
+          <cooldownTime>1.5</cooldownTime>
+          <armorPenetration>0.7</armorPenetration>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+      </tools>
+  </ThingDef>
 
-<ThingDef Parentname="BaseHumanMakeableGun_CE">
-	<defname>rifle Arisaka</defname>
-	<label>Type 99 rifle Arisaka</label>  
-	<description></description>
+<!-- arisaka scoped -->
 
-	<graphicData>
-	<texPath>Things/BoltActionRifle</texpath>
-	<graphicClass>Graphic_Single<graphicClass>
-	</graphicData>
-
-	<soundInteract>InteractRifle</soundInteract>
-
-	<statBasea>
-		<WorkToMake>200</WorkToMake>
-		<SightEfficiency>0.50</SightEfficiency>
-		<shotSpread>0.02</shotSpread>
-		<SwayFactor>1.40<SwayFactor>
-		<Bulk>9.50<Bulk>
-		<Mass>3.90<Mass>
-		<RangedWeaPon_Cooldown>1<RangedWeaPon_Cooldown>
-	</statBasea>
-
-	<costList>
-		<Steel>50</Steel>
-		<Wood>100</Wood>
-	</costList>
-
-	<verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>true</hasSTandardCommand>
-			<projectileDef>77x58mmArisaka</projectileDef>
-			<warmupTime>1</warmupTime>
-			<range>70<range>
-			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>Shot_SniperRifle</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-			<targetParams>
-        		<canTargetLocations>true</canTargetLocations>
-       		</targetParams>
-
-		</li>
-	</verbs>
-	
-	<comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-			<magazineSize>5</magazineSize>
-			<reloadTime>4</reloadTime>
-			<ammoSet>AmmoSet_77x58mmArisaka</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-			<aiUseBurstMode>FALSE</aiUseBurstMode>
-			<aiAimMode>Aimed Shot</aiAimMode>
-		</li>
-		
-		</comps>
-    	<weaponTags>
-      		<li>SniperRifle</li>
-    	</weaponTags>
-		<recipeMaker>
-      		<researchPrerequisite>Gunsmithing</researchPrerequisite>
-    	</recipeMaker>
-
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>	
-			<li>Blunt</li>
-				</capacities>
-	<power>9</power>	
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+    <defName>CE_Gun_rifle Arisaka scoped</defName>
+    <label>Type 99 rifle Arisaka scoped</label>
+    <description></description>
+    <graphicData>
+      <texPath>Things/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>300</WorkToMake>
+      <SightsEfficiency>2.5</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1</SwayFactor>
+      <Bulk>11</Bulk>
+      <Mass>5</Mass>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Wood>60</Wood>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AmmoSet_77x58mmArisaka</defaultProjectile>
+        <warmupTime>1.50</warmupTime>
+        <range>90</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+        	<canTargetLocations>true</canTargetLocati
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>6</reloadTime>
+        <ammoSet>AmmoSet_77x58mmArisaka</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>1.8</cooldownTime>
+          <chanceFactor>1.5</chanceFactor>
+          <armorPenetration>0.11</armorPenetration>
+          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.118</armorPenetration>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>muzzle</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.086</armorPenetration>
+          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+        </li>
+      </tools>
+  </ThingDef>
