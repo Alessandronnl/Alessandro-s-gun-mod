@@ -60,7 +60,7 @@
           </capacities>
           <power>14</power>
           <cooldownTime>1.5</cooldownTime>
-          <armorPenetration>0.7</armorPenetration>
+          <armorPenetration>0.3</armorPenetration>
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
       </tools>
@@ -123,17 +123,6 @@
     </recipeMaker>
       <tools>
         <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>9</power>
-          <cooldownTime>1.8</cooldownTime>
-          <chanceFactor>1.5</chanceFactor>
-          <armorPenetration>0.11</armorPenetration>
-          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-        </li>
-        <li Class="CombatExtended.ToolCE">
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -142,16 +131,6 @@
           <cooldownTime>1.9</cooldownTime>
           <armorPenetration>0.118</armorPenetration>
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>muzzle</label>
-          <capacities>
-            <li>Poke</li>
-          </capacities>
-          <power>10</power>
-          <cooldownTime>1.9</cooldownTime>
-          <armorPenetration>0.086</armorPenetration>
-          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
   </ThingDef>
